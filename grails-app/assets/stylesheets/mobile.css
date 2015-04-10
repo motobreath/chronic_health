@@ -1,0 +1,142 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 540px) {
+    footer{
+        display:none;
+    }
+    article{
+        background:none;
+    }
+    header span{
+        font-size:12pt;
+    }
+
+    header .title{
+        width:177px;
+        overflow:hidden;
+        white-space: nowrap;
+    }
+
+    header{
+        text-align: left !important;
+        height:55px;
+        padding:0 8px;  
+    }
+
+    #mobileHomeIcon{
+        position:absolute;
+        top:18px;
+        right:5px;
+    }
+
+    #smallNav{
+        display:none;
+    }
+
+    #container{
+        margin-top:5px;
+    }
+
+    #searchResultsTable_paginate{
+        clear:both;
+        float:none;
+        text-align:left;
+        padding:10px 0;
+        overflow: hidden;
+    }
+    
+    .paginate_button{        
+        color:#fff !important;
+        text-decoration: none;
+        background-color: #428BCA;
+        border-color: #357EBD;
+        background-image: none;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;  
+    }
+
+    .paginate_button.disabled{
+        opacity: .5;
+    }
+
+    .dataTables_filter{
+        clear:both;
+        float:none;
+        text-align: left;
+    }
+    
+    .sorting_asc{
+        background:none;
+    }
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (max-width : 1150px) {
+
+}
+
+@media only screen
+and (max-width:786px){
+    .searchResultsRoomNumber{
+        display:none;
+    }
+}
+
+@media only screen 
+and (max-width : 886px) {    
+
+    header{
+        text-align: left;
+        height:55px;
+        padding:0 8px;            
+    }
+
+    #smallNav.top{
+        top:20px;
+        right:8px;
+    }
+
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
+
+/* Custom breakpoint at 800px;*/
+@media only screen 
+and (max-width : 800px){
+    
+}

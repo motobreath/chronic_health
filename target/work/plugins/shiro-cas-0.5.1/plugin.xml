@@ -1,0 +1,27 @@
+<plugin name='shiro-cas' version='0.5.1' grailsVersion='2.0 &gt; *'>
+  <title>Shiro CAS Plugin</title>
+  <description>Enables Grails applications to use JASIG CAS for single sign-on with Apache Shiro</description>
+  <documentation>https://github.com/commercehub-oss/grails-shiro-cas/blob/master/README.md</documentation>
+  <type>ShiroCasGrailsPlugin</type>
+  <resources />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='https://repo.grails.org/grails/plugins-releases' url='https://repo.grails.org/grails/plugins-releases/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.spockframework' name='spock-grails-support' version='0.7-groovy-2.0' />
+    </test>
+    <compile>
+      <dependency group='org.apache.shiro' name='shiro-cas' version='1.2.2' />
+    </compile>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='shiro' version='1.2.1' />
+    </compile>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
