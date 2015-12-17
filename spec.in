@@ -1,0 +1,40 @@
+# RPM spec file for Grails projects.
+#
+# This file is meant to be processed before it is handed off to rpmbuild;
+# any substitutions using a dollar sign and braces should have their values
+# inserted before rpmbuild has to use it. These values (version, release)
+# come from the application.properties file. If you need to change them,
+# edit application.properties.
+
+%define baseversion ${version}
+%define baserelease ${release}
+%define capname ${capname}
+
+Name:           ${name}
+Summary:        Grails Template
+Version:        %{baseversion}
+Release:        %{baserelease}
+License:        University of California
+Group:          Applications/Internet
+Source:         %{name}-%{baseversion}.tar.gz
+Vendor:         UC Merced
+requires:       tomcat >= 7.0
+BuildArch:      noarch
+BuildRequires:  java-1.8.0-oracle
+
+%description
+This is a Grails application template.
+
+%prep
+%setup
+
+%build
+make
+
+%install
+rm -fr %{buildroot}
+%make_install
+
+%files
+/var/lib/tomcat/webapps/%{capname}.war
+
